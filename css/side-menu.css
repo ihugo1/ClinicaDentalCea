@@ -1,19 +1,21 @@
 .side-menu{
     height: 100%;
-    width: 70%;
+    width: 60%;
     padding: 2% 10%;
 
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: -70%;
+    right: -60%;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
 
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: var(--dark-blue);
     transition: right 0.3s ease;
+
+    z-index: 10;
 }
 .side-menu-active{
     right: 0;
