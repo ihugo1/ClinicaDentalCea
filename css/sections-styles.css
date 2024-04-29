@@ -112,9 +112,10 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding: 8% 2%;
-    background-color: var(--dark-blue);
+    padding: 10% 2%;
+    background-color: rgb(1, 16, 46);
     color: var(--gray);
+    height: 40vh;
 }
 
 @media only screen and (max-width: 768px) {
@@ -139,5 +140,9 @@
     }
     .schedule-container{
         flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: space-around;
     }
 }

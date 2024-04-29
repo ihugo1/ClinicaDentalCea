@@ -2,13 +2,21 @@
 
 .header{
     width: 100%;
+    height: 16vh;
     padding: 2% 2%;
+    position: fixed;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 50;
 
     background-color: var(--gray);
+}
+section {
+    scroll-margin-top: 15vh;
 }
 .header-left{
     width: 20%;

@@ -15,7 +15,7 @@
     background-color: var(--dark-blue);
     transition: right 0.3s ease;
 
-    z-index: 10;
+    z-index: 60;
 }
 .side-menu-active{
     right: 0;
