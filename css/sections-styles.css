@@ -1,141 +1,122 @@
-/*SectionTitle*****************************/
-.section-title{
+/*Section Generals*/
+.section-gray,.section-blue{
+    scroll-margin-top: 12vh;
+    padding: 2% 10%;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8% 0;
+}
+.section-gray{
+    background-color: var(--gray);
+    color: var(--blue);
+}
+.section-blue{
+    background-color: var(--blue);
+    color: var(--dark-gray);
+}
+.section-title-gray, .section-title-blue{
     font-size: 2rem;
     text-align: center;
-    padding-bottom: 2%;
 }
-/*Services*********************************/ 
-.services{
-    padding: 5% 0;
-    background-color: var(--gray);
+.section-title-blue{
+    color: var(--gray);
+}
+.section-title-gray{
     color: var(--dark-blue);
 }
+/*Services*/
 .servicies-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;
-    width: 100%;
-    height: auto;
-    padding: 2% 0;
+    gap: 0 5%;
 }
 .services-img{
-    height: 400px;
     width: 400px;
-}
-.services-list{
-    display: flex;
-    flex-direction: column;
-    gap: 30px 0;
+    height: 400px;
 }
 .services-list li{
-    font-size: 1.3rem;
+    margin: 15% 0;
+    font-size: 1.5rem;
 }
-
-/*Contact***************************************/
-.contact{
-    padding: 5% 0;
-    background-color: var(--blue);
-    color: var(--gray);
-}
+/*Contact*/
 .contact-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 10%;
-    padding: 2% 10%;
-    width: 100%;
-    height: auto;
 }
 .contact-item{
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .contact-item p{
-    font-size: 1.3rem;
-    margin: 12px 0;
+    font-size: 1.5rem;
+    margin: 5% 0;
 }
 .contact-item i{
-    font-size: 2.5rem;
-    padding: 0;
-    margin: 0;
+    font-size: 3rem;
 }
-/*Location***************************************/
+/*Location*/
 .location{
-    padding-top: 5%;
-    background-color: var(--gray);
-    color: var(--dark-blue);
+    padding: 0 0;
+    padding-top: 2%;
+    justify-content: space-evenly;
 }
 .location-container{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding:2% 0;
-    width: 100%;
 }
 .location-map{
     width: 100%;
-    height: 500px;
+    height: 85%;
+    margin-bottom: 0;
 }
 .location p{
+    padding: 0 2%;
+    text-align: center;
     font-size: 1.3rem;
+    height: 10%;
+}
+/*Schedule*/
+.schedule-container{
+    display: flex;
+    justify-content: space-around;
+}
+.schedule-item{
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 20px;
 }
-/*schedule**************************************/
-.schedule{
-    padding: 5% 0;
-    background-color: var(--blue);
-    color: var(--gray);
-}
-.schedule-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-    padding: 2% 0;
-    width: 100%;
-    height: auto;
-}
-.schedule-item{
-    display: flex;
-    flex-direction: column;
-    font-size: 1.3rem;
-    text-align: center;
-    margin: 20px 0;
-}
-/*Footer**************************************/
+/*Footer*/
 .footer{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 10% 2%;
-    background-color: rgb(1, 16, 46);
-    color: var(--gray);
     height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: black;
+    text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-    .section-title{
-        padding: 5% 0;
-    }
+@media only screen and (max-width: 768px){
+    /*Services*/
     .services-img{
         display: none;
     }
+    /*Contact*/
     .contact-container{
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
     }
     .contact-item{
         flex-direction: row;
     }
     .contact-item i{
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin: 0 10px;
     }
     .schedule-container{
@@ -143,6 +124,5 @@
     }
     .footer{
         flex-direction: column;
-        justify-content: space-around;
     }
 }
